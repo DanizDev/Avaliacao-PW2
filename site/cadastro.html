@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-site</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+
+    <script src="./js/cadastro.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="formulario-cadastro">
+            <form id="form-cadastrar" onsubmit="cadastrar(event)">
+                <h3>Cadastro do Cria</h3>
+                <input type="email" placeholder="Insira seu e-mail" id="email" required="true">
+
+                <input type="text" placeholder="Insira seu usuário" id="usuario" minlength="4" maxlength="12"
+                    required="true">
+
+                <input type="password" placeholder="Insira sua senha" id="senha" minlength="6" maxlength="12"
+                    required="true">
+
+                <input type="submit" value="cadastrar" onclick="cadastrar();return false">
+
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
